@@ -20,25 +20,26 @@ contenedor.appendChild(div8);
 var divs = document.getElementsByTagName('div');
 contenedor.appendChild(div5);
 contenedor.appendChild(div6);
-for(var i=0; i<divs.length;i++){
-  var nombres =['Laboratoriana Amalia',
-                'Laboratoriana Edith',
-                'Laboratoriana Karina',
-                'Laboratoriana Mariana',
-                'Laboratoriana Nohemi',
-                'Laboratoriana Pitt',
-                'Laboratoriana Silvana',
-                'Laboratoriana Lucero',];
-  var imagen1 = document.createElement('img');
-  var ruta= "assets/"+("imagen"+(i+1))+".jpg";
-  var texto = document.createElement('span');
-  divs[i].className ="contenedorImagen";
-  imagen1.src=ruta;
-  imagen1.className="imagenes";
-  imagen1.id="img"+i;
-  divs[i].appendChild(imagen1);
-  texto.className ="textoArriba";
-  texto.id = "texto"+i;
-  texto.innerText = nombres[i];
-  divs[i].appendChild(texto);
+for (var i = 0; i < divs.length; i++) {
+    var nombres = ['Laboratoriana Amalia',
+        'Laboratoriana Edith',
+        'Laboratoriana Karina',
+        'Laboratoriana Mariana',
+        'Laboratoriana Nohemi',
+        'Laboratoriana Pitt',
+        'Laboratoriana Silvana',
+        'Laboratoriana Lucero',
+    ];
+    var imagen1 = document.createElement('img');
+    var ruta = "assets/" + ("imagen" + (i + 1)) + ".jpg";
+    var texto = document.createElement('span');
+    divs[i].className = "contenedorImagen";
+    imagen1.src = ruta;
+    imagen1.className = "imagenes";
+    imagen1.id = "img" + i;
+    divs[i].appendChild(imagen1);
+    texto.className = "textoArriba";
+    texto.id = "texto" + i;
+    texto.innerText = nombres[i];
+    divs[i].appendChild(texto);
 };
